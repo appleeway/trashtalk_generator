@@ -5,11 +5,11 @@
     <div class="col-12 col-md-10 mx-auto">
       <form method="POST" action="/">
         <!-- Jobs Selection -->
-        <div class="card-columns">
+        <div class="card-group">
           <div class="col-4">
             <div class="card mb-3 item" style="width: 18rem;">
               <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
-                class="card-img-top img" alt="engineer">
+                class="card-img-top" style=" height: 250px;" alt="engineer">
               <div class="card-body custom-control custom-radio text-center p-3">
                 <input type="radio" class="custom-control-input" name="jobs" value="engineer" id="engineer"
                   {{#ifEq option.jobs "engineer"}}checked{{/ifEq}}>
@@ -21,7 +21,7 @@
           <div class="col-4">
             <div class="card mb-3 item" style="width: 18rem;">
               <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
-                class="card-img-top img" alt="designer">
+                class="card-img-top" style=" height: 250px;" alt="designer">
               <div class="card-body custom-control custom-radio text-center p-3">
                 <input type="radio" class="custom-control-input" name="jobs" value="designer" id="designer"
                   {{#ifEq option.jobs "designer"}}checked{{/ifEq}}>
@@ -33,7 +33,7 @@
           <div class="col-4">
             <div class="card mb-3 item" style="width: 18rem;">
               <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
-                class="card-img-top img" alt="entrepreneur">
+                class="card-img-top" style=" height: 250px;" alt="entrepreneur">
               <div class="card-body custom-control custom-radio text-center p-3">
                 <input type="radio" class="custom-control-input" name="jobs" value="entrepreneur" id="entrepreneur"
                   {{#ifEq option.jobs "entrepreneur"}}checked{{/ifEq}}>
@@ -50,7 +50,7 @@
 
             <!-- Message zone -->
             {{#if sentence}}
-            <div class="alert alert-info d-inline-block ml-3" role="alert">
+            <div class="alert alert-secondary d-inline-block ml-3" role="alert">
               <code>{{sentence}}</code>
             </div>
             {{/if}}
