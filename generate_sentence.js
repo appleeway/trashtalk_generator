@@ -1,11 +1,11 @@
 //define sample function to randomly return a item in an array
-function randomChoose(wordsArr)) {
+function randomChoose(wordsArr) {
   const index = Math.floor(Math.random() * wordsArr.length)
-  return wordArr[index]
+  return wordsArr[index]
 }
 
 //define a sentence generator function
-function generateSentence(option) {
+function generateSentence(jobs) {
   // define tasks
   const task = {
     engineer: ['加個按鈕', '加新功能', '切個版', '改一點code'],
@@ -18,7 +18,7 @@ function generateSentence(option) {
   // define target and assign task colloction
   let targetTask = []
   let target = ''
-  switch (option.jobs) {
+  switch (jobs) {
     case 'engineer':
       targetTask = task.engineer
       target = '工程師'

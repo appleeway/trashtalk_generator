@@ -20,9 +20,9 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-  const option = req.body
-  const sentence = generateSentence(option)
-  res.render('index', { sentence, option })
+  const jobs = req.body.jobs
+  const sentence = generateSentence(jobs)
+  res.render('index', { sentence, jobs })
 })
 
 app.listen(port, () => {
