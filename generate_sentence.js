@@ -1,7 +1,7 @@
 //define sample function to randomly return a item in an array
-function randomChoose(array) {
-  const index = Math.floor(Math.random() * array.length)
-  return array[index]
+function randomChoose(wordsArr)) {
+  const index = Math.floor(Math.random() * wordsArr.length)
+  return wordArr[index]
 }
 
 //define a sentence generator function
